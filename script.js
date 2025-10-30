@@ -32,5 +32,5 @@ lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '../animations/Handshake.json'
+    path: '../animations/handshakeMen.json'
 })
