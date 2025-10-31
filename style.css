@@ -386,6 +386,7 @@ nav ul li a:hover {
 
 .card-text {
     width: 90%;
+    height: 200px;
 
     overflow: hidden;
 
@@ -398,7 +399,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 
-    padding: 10px;
+    padding: 20px;
 
     transition: all 0.5s ease;
 }
@@ -532,16 +533,18 @@ footer .container-grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .footer-esquerda {
-    width: 100%;    
-
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 
-    border-right: 5px solid var(--branco);
+    width: 500px;
+    height: 350px;
+
+    border-right: 10px solid var(--branco);
 }
 
 .footer-esquerda p {
@@ -555,13 +558,23 @@ footer .container-grid {
 }
 
 .contato {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
     width: 50%;
 
-    padding: 20px;
+    padding: 60px;
+    
 }
 
 .contato p {
     font-size: 20px;
     font-family: 'gabarito-medium';
     color: var(--branco);
+}
+
+.copy {
+  font-size: 22px;
+  vertical-align: middle;
 }
