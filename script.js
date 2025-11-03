@@ -24,7 +24,8 @@ lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '../animations/Gears animation.json'
+    path: '../animations/Secure Login.json',
+    
 })
 
 lottie.loadAnimation({
