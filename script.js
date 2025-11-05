@@ -15,16 +15,16 @@ lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: '../animations/60 fps computer.json'
+  path: '../animations/Secure Login.json'
 });
 
 
 lottie.loadAnimation({
-    container: document.getElementById("anim-engrenagem"),
+    container: document.getElementById("anim-homem-trabalhando"),
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '../animations/Secure Login.json',
+    path: '../animations/Man Working.json',
     
 })
 
@@ -33,5 +33,5 @@ lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '../animations/handshakeMen.json'
+    path: '../animations/Business Handshake.json'
 })

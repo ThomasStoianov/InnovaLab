@@ -59,25 +59,24 @@ header .container-grid {
 }
 
 header .container-grid img {
-    width: 70px;
-    height: 70px;
+    width: 200px;
 }
 
-nav {
+header nav {
     width: 500px;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-nav ul li {
+header nav ul li {
     list-style-type: none;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
 
     font-size: 20px;
@@ -88,7 +87,7 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: var(--cinza); /* tom de cinzaneon */
     text-shadow: 
         0 0 20px var(--cinza),
@@ -225,8 +224,8 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 
-    box-shadow: 25px 10px 30px rgba(0, 0, 0, 0.5),
-                0 -10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 25px 10px 30px rgba(0, 0, 0, 0.3),
+                0 -10px 30px rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 2;
 
@@ -271,7 +270,7 @@ nav ul li a:hover {
     font-family: 'gabarito-regular';
 }
 
-#anim-engrenagem {
+#anim-homem-trabalhando {
     width: 900px;
     height: 600px;
 }
@@ -293,8 +292,8 @@ nav ul li a:hover {
 
     background-color: var(--azul-escuro);
 
-     box-shadow: 25px 10px 30px rgba(0, 0, 0, 0.5),
-                0 -10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 25px 10px 30px rgba(0, 0, 0, 0.3),
+                0 -10px 30px rgba(0, 0, 0, 0.3);
 }
 
 #cursos .container-grid {
@@ -308,16 +307,14 @@ nav ul li a:hover {
 }
 
 #cursos-titulo {
-    width: 270px;
-
-    cursor: pointer;
+    width: 345px;
     overflow: hidden;
 
     align-self: flex-start;
 }
 
 #cursos-titulo h2 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'gabarito-medium';
     color: var(--branco);
 
@@ -449,6 +446,8 @@ nav ul li a:hover {
     color: var(--preto);
 }
 
+/*BOTÃO*/
+
 #comecar {
   margin-top: 25px;
   width: 220px;
@@ -463,7 +462,6 @@ nav ul li a:hover {
   cursor: pointer;
   overflow: hidden;
   position: relative;
-  z-index: 0;
 }
 
 #comecar::before {
@@ -478,10 +476,8 @@ nav ul li a:hover {
     #F57C00
   );
   transform: scale(1.1);
-  z-index: 1;
   opacity: 0; 
   transition: opacity 0.3s ease;
-  animation: none; 
 }
 
 #comecar::after {
@@ -490,7 +486,6 @@ nav ul li a:hover {
   inset: 4px;
   background: var(--azul-escuro);
   border-radius: 16px;
-  z-index: 2;
 }
 
 #comecar span {
@@ -516,7 +511,7 @@ nav ul li a:hover {
 
 footer {
     width: 100%;
-    height: 300px;
+    height: 350px;
 
     display: flex;
     align-items: center;
@@ -525,48 +520,39 @@ footer {
     background-color: var(--azul-escuro);
 
     position: relative;
+
+    box-shadow: 25px 10px 30px rgba(0, 0, 0, 0.3),
+                0 -10px 30px rgba(0, 0, 0, 0.3);
 }
 
 footer .container-grid {
-    width: 90%;
+    width: 60%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#footer-esquerda {
+    width: 500px;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
     gap: 30px;
-
 }
 
-#redes-sociais {
-    width: 300px;
-
-    display: flex;
-    justify-content: space-around;
+#footer-esquerda img {
+    width: 250px;
 }
 
-#redes-sociais img {
-    width: 30px;
-    height: 30px;
-
-    filter: brightness(0);
-}
-
-.circulo-branco {
-    width: 60px;
-    height: 60px;
-
-    background-color: var(--branco);
-
-    border: none;
-    border-radius: 40px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    cursor: pointer;
+#footer-esquerda p {
+    color: var(--branco);
+    font-size: 18px;
+    font-family: 'gabarito-regular';
 }
 
 .copy {
@@ -574,29 +560,80 @@ footer .container-grid {
     vertical-align: middle;
 }
 
-#direitos {
-    width: 100%;
-    height: 60px;
+#footer-direita {
+    width: 300px;
+    height: 100%;
 
-    background-color: var(--azul-escuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    position: absolute;
-    bottom: 0;
+    gap: 30px;
+}
+
+#nav-footer {
+    width: 300px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#nav-footer ul li {
+    list-style-type: none;
+}
+
+#nav-footer ul li a {
+    text-decoration: none;
+
+    font-size: 20px;
+    font-family: 'gabarito-medium';
+
+    color: var(--branco);
+
+    transition: all 0.3s ease;
+}
+
+#nav-footer ul li a:hover {
+    color: var(--cinza); /* tom de cinzaneon */
+    text-shadow: 
+        0 0 20px var(--cinza),
+        0 0 20px var(--cinza),
+        0 0 5px var(--cinza),
+        0 0 10px var(--cinza);
+    border-color: var(--cinza);
+}
+
+#projeto-educacional {
+    width: 250px;
+    height: 40px;
+
+    background-color: #3F639B;
+    backdrop-filter: blur(10px);
+
+    border: none;
+    border-radius: 30px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 10px;
+
 }
 
-#direitos p {
+#projeto-educacional img {
+    width: 30px;
+}
+
+#projeto-educacional h4 {
     color: var(--branco);
     font-family: 'gabarito-regular';
     font-size: 20px;
 }
 
-#direitos img {
-    width: 50px;
-    height: 50px;
+#footer-direita p {
+    color: var(--branco);
+    font-size: 18px;
+    font-family: 'gabarito-regular';
 }
-
