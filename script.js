@@ -15,7 +15,7 @@ lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: 'animations/Secure Login.json'
+  path: 'animations/Secure_Login.json'
 });
 
 
@@ -24,7 +24,7 @@ lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'animations/Man Working.json',
+    path: 'animations/Man_Working.json',
     
 })
 
@@ -33,7 +33,7 @@ lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'animations/Business Handshake.json'
+    path: 'animations/Business_Handshake.json'
 })
 
  // Verifica a largura da tela ao carregar a página
