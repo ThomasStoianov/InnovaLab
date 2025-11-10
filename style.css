@@ -6,6 +6,8 @@
 
 html {
     scroll-behavior: smooth;
+
+    -webkit-text-size-adjust: 100%;
 }
 
 @font-face {
@@ -218,7 +220,7 @@ header nav ul li a:hover {
 
     padding: 30px;
 
-    width: 100%;
+    width: 111.5%;
 
     display: flex;
     justify-content: center;
@@ -244,7 +246,7 @@ header nav ul li a:hover {
 }
 
 .anim-computador {
-  width: 900px;
+  width: 90%;
   height: 600px;
 }
 
@@ -271,12 +273,12 @@ header nav ul li a:hover {
 }
 
 #anim-homem-trabalhando {
-    width: 900px;
+    width: 90%;
     height: 600px;
 }
 
 #anim-handshake {
-    width: 900px;
+    width: 90%;
     height: 600px;
 }
 
@@ -693,15 +695,15 @@ footer .container-grid {
     }
 
     .anim-computador {
-        width: 800px;
+        width: 50%;
     }
 
     #anim-homem-trabalhando {
-        width: 800px;
+        width: 50%;
     }
 
     #anim-handshake {
-        width: 800px;
+        width: 50%;
     }
 
     .valores h2 {
@@ -715,15 +717,15 @@ footer .container-grid {
 
 @media (max-width: 1350px) {
     .anim-computador {
-        width: 550px;
+        width: 50%;
     }
 
     #anim-homem-trabalhando {
-        width: 550px;
+        width: 50%;
     }
 
     #anim-handshake {
-        width: 550px;
+        width: 50%;
     }
 
     .card {
@@ -757,15 +759,15 @@ footer .container-grid {
 
 @media (max-width: 1300px) {
     .anim-computador {
-        width: 500px;
+        width: 50%;
     }
 
     #anim-homem-trabalhando {
-        width: 500px;
+        width: 50%;
     }
 
     #anim-handshake {
-        width: 500px;
+        width: 50%;
     }
 }
 
@@ -814,15 +816,15 @@ footer .container-grid {
 
 @media (max-width: 1050px) {
     .anim-computador {
-        width: 400px;
+        width: 50%;
     }
 
     #anim-homem-trabalhando {
-        width: 400px;
+        width: 50%;
     }
 
     #anim-handshake {
-        width: 400px;
+        width: 50%;
     }
 
     .valores h2 {
