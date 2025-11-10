@@ -905,9 +905,6 @@ footer .container-grid {
         font-size: 70px;
     }
 
-    footer .container-grid {
-        width: 90%;
-    }
 }
 
 @media (max-width: 800px) {
@@ -987,9 +984,16 @@ footer .container-grid {
     }
 
     footer .container-grid {
-        width: 80%;
+        width: 70%;
     }
 
+    .valores h2 {
+        font-size: 20px;
+    }
+
+    #footer-direita {
+        width: 200px;
+    }
     
 }
 
@@ -1006,10 +1010,6 @@ footer .container-grid {
         width: 200px;
     }
 
-    .valores h2 {
-        font-size: 20px;
-    }
-
     .valores p {
         font-size: 14px;
     }
@@ -1022,7 +1022,10 @@ footer .container-grid {
         font-size: 18px;
     }
 
-    #footer-esquerda img {
-        
+}
+
+@media (max-width: 600px) {
+    #footer-esquerda {
+        align-items: center;
     }
 }
