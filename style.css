@@ -61,11 +61,12 @@ header .container-grid {
 }
 
 header .container-grid img {
-    width: 200px;
+    width: 10%;
+    height: 100%;
 }
 
 header nav {
-    width: 500px;
+    width: 30%;
 }
 
 header nav ul {
