@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -70,7 +71,7 @@ header .container-grid {
 }
 
 header .container-grid img {
-    width: auto;
+    width: 20%;
     height: 80%;
 
     max-width: 150px;
@@ -625,7 +626,7 @@ footer .container-grid {
 }
 
 #nav-footer {
-    width: 300px;
+    width: 100%;
     height: 100px;
 
     display: flex;
@@ -767,6 +768,7 @@ footer .container-grid {
 
     #footer-direita p {
         font-size: 16px;
+        white-space: nowrap;
     }
 
     #nav-footer ul li a {
@@ -855,7 +857,7 @@ footer .container-grid {
 
 @media (max-width: 1000px) {
     .card-text p {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .valores h2 {
@@ -883,9 +885,6 @@ footer .container-grid {
         height: 150px;
     }
 
-    .card-text p {
-        font-size: 18px;
-    }
 
     .card {
         width: 60%;
@@ -914,9 +913,6 @@ footer .container-grid {
         font-size: 80px;
     }
 
-    header nav {
-        width: 400px;
-    }
 }
 
 @media (max-width: 850px) {
@@ -970,13 +966,6 @@ footer .container-grid {
         width: 300px;
     }
 
-    .valores p {
-        font-size: 5px;
-    }
-
-    .valores h2 {
-        font-size: 10px;
-    }
 }
 
 @media (max-width: 700px) {
@@ -992,16 +981,12 @@ footer .container-grid {
         width: 280px;
     }
 
-    header nav {
-        width: 300px;
-    }
-
     header nav ul li a {
         font-size: 15px;
     }
 
     header .container-grid img {
-        width: 150px;
+        width: 25%;
     }
 }
 
@@ -1015,17 +1000,63 @@ footer .container-grid {
     }
 
     .valores h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #footer-direita {
         width: 200px;
     }
     
+    .card-text p {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 600px) {
-    .anim-computador {
+    #treinamento .container-grid h2 {
+        font-size: 40px;
+    }
+
+    #footer-esquerda img {
+        width: 50%;
+    }
+
+    #footer-esquerda p {
+        font-size: 10px;
+    }
+
+    footer .container-grid {
+        width: 80%;
+    }
+
+    #nav-footer ul li a {
+        font-size: 15px;
+    }
+
+    footer {
+        height: 300px;
+    }
+
+    #projeto-educacional {
+        width: 150px;
+    }
+
+    #projeto-educacional h4{
+        font-size: 10px;
+
+        font-family: 'gabarito-regular';
+    }   
+
+    #footer-direita p {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    #banner-text h1 {
+        font-size: 50px;
+    }
+
+   .anim-computador {
         width: 200px;
     }
 
@@ -1049,10 +1080,25 @@ footer .container-grid {
         font-size: 18px;
     }
 
+    .card-text p {
+        font-size: 14px;
+    }
+
+    .conheca-cursos {
+        width: 90%;
+    }
+
+    .conheca-cursos h3 {
+        font-size: 20px;
+    }
 }
 
-@media (max-width: 600px) {
-    #footer-esquerda {
-        align-items: center;
+@media (max-width: 650px) {
+    .valores h2 {
+        font-size: 15px;
+    }
+
+    .valores p {
+        font-size: 13px;
     }
 }
