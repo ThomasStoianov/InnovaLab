@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 html {
@@ -34,6 +37,12 @@ html {
     --cinza: #f0f4f7
 }
 
+h1, h2, h3, p, a, span {
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.4;
+}
+
 /* HEADER */
 
 header {
@@ -61,18 +70,25 @@ header .container-grid {
 }
 
 header .container-grid img {
-    width: 10%;
-    height: 100%;
+    width: auto;
+    height: 80%;
+
+    max-width: 150px;
 }
 
 header nav {
-    width: 30%;
+    width: auto;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 header nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
+    gap: 40px;
 }
 
 header nav ul li {
