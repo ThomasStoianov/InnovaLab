@@ -36,14 +36,17 @@ lottie.loadAnimation({
     path: 'animations/Business_Handshake.json'
 })
 
-// Verifica a largura da tela ao carregar a página
-if (window.innerWidth <= 1250) {
-   alert("Atenção: Para melhor experiência de navegação no treinamento, mude para desktop!");
+let avisoMostrado = false;
+
+function verificarLargura() {
+    const largura = window.innerWidth || document.documentElement.clientWidth;
+    if (largura <= 1250 && !avisoMostrado) {
+        alert("Atenção: Para melhor experiência de navegação no treinamento, mude para desktop!");
+        avisoMostrado = true;
+    } else if (largura > 1250) {
+        avisoMostrado = false;
+    }
 }
 
-// Também verifica se o usuário redimensiona a janela
-window.addEventListener("resize", function() {
-   if (window.innerWidth <= 1250) {
-    alert("Atenção: Para melhor experiência de navegação no treinamento, mude para desktop!");
-   }
-});
+verificarLargura();
+window.addEventListener("resize", verificarLargura);
