@@ -382,13 +382,14 @@ header nav ul li a:hover {
     inset: 300px;
 
     width: 300px;
-    height: 50px;
+    height: 60px;
 
     background-color: white;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     left: 50%;
     top: 50%;
@@ -398,6 +399,10 @@ header nav ul li a:hover {
     border-radius: 30px;
 
     transition: all 0.5s ease;
+}
+
+.conheca-cursos p {
+    font-family: 'gabarito-regular';
 }
 
 .conheca-cursos h3 {
@@ -884,7 +889,7 @@ footer .container-grid {
 
 
     .card {
-        width: 60%;
+        width: 90%;
         height: 400px;
     }
 
@@ -1027,6 +1032,10 @@ footer .container-grid {
     .valores p {
         font-size: 13px;
     }
+
+    .card {
+        width: 90%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1094,7 +1103,7 @@ footer .container-grid {
     }
 
     .card-text p {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .conheca-cursos {
@@ -1147,7 +1156,7 @@ footer .container-grid {
     }
 
     .card-text p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     #cursos {
@@ -1184,7 +1193,7 @@ footer .container-grid {
     }
 
     .valores h2 {
-        font-size: 11px;
+        font-size: 10px;
     }
 }
 
@@ -1213,10 +1222,6 @@ footer .container-grid {
         vertical-align: middle;
     }
 
-    .card-text #texto-valores-azul {
-        width: 400px;
-    }
-
     #cursos-titulo h2 {
         font-size: 40px;
     }
@@ -1229,5 +1234,9 @@ footer .container-grid {
 @media (max-width: 350px) {
     .valores p {
         font-size: 6px;
+    }
+
+    .valores {
+        height: 150px;
     }
 }
