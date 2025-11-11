@@ -797,7 +797,7 @@ footer .container-grid {
     }
 
     .card-text p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     #cursos {
@@ -1069,7 +1069,6 @@ footer .container-grid {
         white-space: nowrap;
     }
 
-
    .anim-computador {
         width: 50%;
     }
@@ -1183,6 +1182,10 @@ footer .container-grid {
     #banner-text h1 {
         font-size: 35px;
     }
+
+    .valores h2 {
+        font-size: 11px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1194,12 +1197,8 @@ footer .container-grid {
         gap: 10px;
     }
 
-    .valores h2 {
-        font-size: 12px;
-    }
-
     .valores p {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     #treinamento .container-grid h2 {
@@ -1212,5 +1211,23 @@ footer .container-grid {
 
     .copy {
         vertical-align: middle;
+    }
+
+    .card-text #texto-valores-azul {
+        width: 400px;
+    }
+
+    #cursos-titulo h2 {
+        font-size: 40px;
+    }
+
+    #cursos-titulo {
+        width: 280px;
+    }
+}
+
+@media (max-width: 350px) {
+    .valores p {
+        font-size: 6px;
     }
 }
