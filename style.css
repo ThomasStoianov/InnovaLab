@@ -48,7 +48,7 @@ h1, h2, h3, p, a, span {
 
 header {
     width: 100%;
-    height: 100px;
+    height: 70px;
 
     background-color: rgba(0, 0, 0, 0.5);
 
@@ -121,7 +121,6 @@ header nav ul li a:hover {
 
 #banner {
     width: 100%;
-    height: 700px;
 
     position: relative;
     overflow: hidden;
@@ -626,8 +625,6 @@ footer .container-grid {
 }
 
 #nav-footer {
-    width: 100%;
-    height: 100px;
 
     display: flex;
     flex-direction: column;
@@ -906,6 +903,18 @@ footer .container-grid {
     .conheca-cursos h3 {
         font-size: 25px;
     }
+
+    #dots {
+        width: 20%;
+        height: 20px;
+
+        bottom: 10px;
+    }
+
+    .dot {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media (max-width: 950px) {
@@ -951,7 +960,7 @@ footer .container-grid {
     }
 
     #banner-text h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .anim-computador {
@@ -985,18 +994,18 @@ footer .container-grid {
         font-size: 15px;
     }
 
-    header .container-grid img {
-        width: 25%;
+    .valores {
+        height: 300px;
     }
 }
 
 @media (max-width: 650px) {
     #footer-esquerda p {
-        width: 250px;
+        width: 80%;
     }
 
     footer .container-grid {
-        width: 70%;
+        width: 80%;
     }
 
     .valores h2 {
@@ -1009,6 +1018,14 @@ footer .container-grid {
     
     .card-text p {
         font-size: 15px;
+    }
+
+    .valores h2 {
+        font-size: 15px;
+    }
+
+    .valores p {
+        font-size: 13px;
     }
 }
 
@@ -1052,24 +1069,21 @@ footer .container-grid {
         white-space: nowrap;
     }
 
-    #banner-text h1 {
-        font-size: 50px;
-    }
 
    .anim-computador {
-        width: 200px;
+        width: 50%;
     }
 
     #anim-homem-trabalhando {
-        width: 200px;
+        width: 50%;
     }
 
     #anim-handshake {
-        width: 200px;
+        width: 50%;
     }
 
     .valores p {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .valores {
@@ -1077,11 +1091,11 @@ footer .container-grid {
     }
 
     #nav-footer ul li a{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .card-text p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .conheca-cursos {
@@ -1091,14 +1105,112 @@ footer .container-grid {
     .conheca-cursos h3 {
         font-size: 20px;
     }
+
+    .texto {
+        gap: 20px;
+    }
 }
 
-@media (max-width: 650px) {
-    .valores h2 {
+
+@media (max-width: 500px) {
+    #banner-text h1 {
+        font-size: 40px;
+    }
+
+    .valores {
+        height: 250px;
+    }
+
+    header nav ul{
+        gap: 20px;
+    }
+
+    #direitos p {
+        white-space: nowrap;
+    }
+
+    .copy {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    #treinamento .container-grid h2 {
+        font-size: 35px;
+    }
+
+    .card {
+        height: 300px;
+    }
+
+    .card-text {
+        height: 80%;
+    }
+
+    .card-text p {
+        font-size: 10px;
+    }
+
+    #cursos {
+        height: 1200px;
+    }
+
+    .conheca-cursos h3 {
         font-size: 15px;
     }
 
+    #nav-footer ul li a {
+        font-size: 12px;
+    }
+
+    #footer-direita {
+        gap: 20px;
+    }
+
+    #projeto-educacional img {
+        width: 15px;
+    }
+
+    #projeto-educacional {
+        width: 130px;
+        height: 30px;
+    }
+
+    #projeto-educacional p{
+        font-size: 8px;
+    }
+
+    #banner-text h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    header nav ul li a {
+        font-size: 12px;
+    }
+
+    header nav ul {
+        gap: 10px;
+    }
+
+    .valores h2 {
+        font-size: 12px;
+    }
+
     .valores p {
-        font-size: 13px;
+        font-size: 10px;
+    }
+
+    #treinamento .container-grid h2 {
+        font-size: 30px;
+    }
+
+    #footer-esquerda p{
+        font-size: 8px;
+    }
+
+    .copy {
+        vertical-align: middle;
     }
 }
