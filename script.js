@@ -36,20 +36,15 @@ lottie.loadAnimation({
     path: 'animations/Business_Handshake.json'
 })
 
-let avisoMostrado = false;
-
-function verificarLargura() {
-    const largura = window.innerWidth || document.documentElement.clientWidth;
-    if (largura <= 1250 && !avisoMostrado) {
-        alert("Atenção: Para melhor experiência de navegação no treinamento, mude para desktop!");
-        avisoMostrado = true;
-    } else if (largura > 1250) {
-        avisoMostrado = false;
-    }
-}
-
-verificarLargura();
-window.addEventListener("resize", verificarLargura);
+document.getElementById("comecar").addEventListener("click", function() {
+  // verifica o tamanho da tela
+  if (window.innerWidth <= 1250) {
+    alert("Atenção: Para melhor experiência, mude para desktop!");
+  } else {
+    
+    window.location.href = "pasta-do-jogo/index.html"; 
+  }
+});
 
 const menuBtn = document.getElementById('menu-btn');
 const navList = document.querySelector('header nav ul');
