@@ -71,7 +71,7 @@ header .container-grid {
 }
 
 header .container-grid img {
-    width: 20%;
+    width: 25%;
     height: 80%;
 
     max-width: 150px;
@@ -894,9 +894,8 @@ footer .container-grid {
         height: 150px;
     }
 
-
     .card {
-        width: 50%;
+        width: 60%;
         height: 400px;
     }
 
@@ -913,7 +912,7 @@ footer .container-grid {
     }
 
     .conheca-cursos h3 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #dots {
@@ -1153,7 +1152,7 @@ footer .container-grid {
     }
 
     .card-text p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .conheca-cursos {
@@ -1222,7 +1221,7 @@ footer .container-grid {
     }
 
     .card-text p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     #cursos {
