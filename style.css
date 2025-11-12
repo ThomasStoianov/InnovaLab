@@ -117,6 +117,17 @@ header nav ul li a:hover {
     border-color: var(--cinza);
 }
 
+#menu-btn {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  display: none; /* só aparece no celular */
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 1001;
+}
+
 /* BANNER */
 
 #banner {
@@ -248,10 +259,6 @@ header nav ul li a:hover {
     position: relative;
     z-index: 2;
 
-}
-
-#valores-azul .valores {
-    width: 90%;
 }
 
 #valores-azul h2 {
@@ -889,7 +896,7 @@ footer .container-grid {
 
 
     .card {
-        width: 90%;
+        width: 50%;
         height: 400px;
     }
 
@@ -910,10 +917,10 @@ footer .container-grid {
     }
 
     #dots {
-        width: 20%;
+        width: 120px;
         height: 20px;
 
-        bottom: 10px;
+        bottom: 20px;
     }
 
     .dot {
@@ -926,7 +933,50 @@ footer .container-grid {
     #banner-text h1 {
         font-size: 80px;
     }
+}
 
+@media (max-width: 900px) {
+  /* Mostra o botão no celular */
+  #menu-btn {
+    display: block;
+    margin-left: auto; /* empurra o ícone pro canto direito */
+  }
+
+  /* Ajusta o container do header */
+  header .container-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* pra nav e botão ficarem dentro do header */
+  }
+
+  /* Esconde o menu por padrão */
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 80px; /* logo abaixo do header */
+    right: 10px;
+    width: 200px;
+    background: var(--azul-medio);
+    padding: 15px 0;
+    gap: 20px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  /* Quando ativo, aparece */
+  header nav ul.active {
+    display: flex;
+  }
+
+  /* Links do menu */
+  header nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 850px) {
@@ -1095,7 +1145,7 @@ footer .container-grid {
     }
 
     .valores {
-        height: 300px;
+        height: 250px;
     }
 
     #nav-footer ul li a{
@@ -1117,6 +1167,15 @@ footer .container-grid {
     .texto {
         gap: 20px;
     }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    #dots {
+        width: 50px;
+    }
 }
 
 
@@ -1126,7 +1185,7 @@ footer .container-grid {
     }
 
     .valores {
-        height: 250px;
+        height: 200px;
     }
 
     header nav ul{

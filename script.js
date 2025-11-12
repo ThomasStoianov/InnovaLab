@@ -50,3 +50,10 @@ function verificarLargura() {
 
 verificarLargura();
 window.addEventListener("resize", verificarLargura);
+
+const menuBtn = document.getElementById('menu-btn');
+const navList = document.querySelector('header nav ul');
+
+menuBtn.addEventListener('click', () => {
+  navList.classList.toggle('active');
+});
