@@ -119,7 +119,7 @@ header nav ul li a:hover {
 
 #menu-btn {
   width: 35px;
-  height: 35px;
+  height: 30px;
   cursor: pointer;
   display: none; /* só aparece no celular */
   position: fixed;
@@ -772,11 +772,11 @@ footer .container-grid {
     }
 
     #footer-esquerda p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     #footer-direita p {
-        font-size: 16px;
+        font-size: 14px;
         white-space: nowrap;
     }
 
@@ -957,7 +957,7 @@ footer .container-grid {
     position: fixed;
     top: 80px; /* logo abaixo do header */
     right: 10px;
-    width: 20%;
+    width: 25%;
     background: var(--azul-medio);
     padding: 15px 0;
     gap: 20px;
@@ -1084,7 +1084,7 @@ footer .container-grid {
     }
 
     .card {
-        width: 90%;
+        width: 70%;
     }
 }
 
