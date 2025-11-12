@@ -957,7 +957,7 @@ footer .container-grid {
     position: fixed;
     top: 80px; /* logo abaixo do header */
     right: 10px;
-    width: 200px;
+    width: 20%;
     background: var(--azul-medio);
     padding: 15px 0;
     gap: 20px;
@@ -1168,16 +1168,23 @@ footer .container-grid {
         gap: 20px;
     }
 
-    .dot {
-        width: 10px;
-        height: 10px;
-    }
-
+    
     #dots {
-        width: 50px;
+        width: 100px;
     }
 }
 
+@media (max-width: 550px) {
+    .dot {
+        width: 15px;
+        height: 15px;
+    }
+
+    #dots {
+        width: 75px;
+        bottom: 10px;
+    }
+}
 
 @media (max-width: 500px) {
     #banner-text h1 {
