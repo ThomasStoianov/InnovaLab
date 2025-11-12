@@ -270,7 +270,7 @@ header nav ul li a:hover {
 }
 
 .anim-computador {
-  width: 90%;
+
   height: 600px;
 }
 
@@ -297,12 +297,11 @@ header nav ul li a:hover {
 }
 
 #anim-homem-trabalhando {
-    width: 90%;
+    
     height: 600px;
 }
 
 #anim-handshake {
-    width: 90%;
     height: 600px;
 }
 
@@ -367,7 +366,7 @@ header nav ul li a:hover {
 }
 
 .card {
-    width: 50%;
+    width: 500px;
     height: 500px;
 
     background-color: var(--azul-leve);
