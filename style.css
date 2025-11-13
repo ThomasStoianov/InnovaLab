@@ -1067,6 +1067,7 @@ footer .container-grid {
 
     #footer-direita {
         width: 200px;
+        gap: 23px;
     }
     
     .card-text p {
@@ -1235,10 +1236,6 @@ footer .container-grid {
         font-size: 12px;
     }
 
-    #footer-direita {
-        gap: 20px;
-    }
-
     #projeto-educacional img {
         width: 15px;
     }
@@ -1263,7 +1260,7 @@ footer .container-grid {
 
 @media (max-width: 400px) {
     header nav ul li a {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     header nav ul {
@@ -1292,6 +1289,10 @@ footer .container-grid {
 
     #cursos-titulo {
         width: 280px;
+    }
+
+    #footer-direita p {
+        font-size: 8px;
     }
 }
 
