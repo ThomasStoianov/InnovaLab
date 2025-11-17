@@ -511,6 +511,10 @@ header nav ul li a:hover {
     color: var(--preto);
 }
 
+#treinamento .container-grid a {
+    border: none;
+}
+
 /*BOTÃO*/
 
 #comecar {
