@@ -52,3 +52,12 @@ const navList = document.querySelector('header nav ul');
 menuBtn.addEventListener('click', () => {
   navList.classList.toggle('active');
 });
+
+document.getElementById("comecar").addEventListener("click", function(e) {
+    const isMobile = /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        e.preventDefault(); // impede abrir a build
+        alert("Este jogo só pode ser jogado em computador. Use um PC para jogar.");
+    }
+});
