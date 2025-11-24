@@ -36,16 +36,6 @@ lottie.loadAnimation({
     path: 'animations/Business_Handshake.json'
 })
 
-document.getElementById("comecar").addEventListener("click", function() {
-  // verifica o tamanho da tela
-  if (window.innerWidth <= 1250) {
-    alert("Atenção: Para melhor experiência, mude para desktop!");
-  } else {
-    
-    window.location.href = "pasta-do-jogo/index.html"; 
-  }
-});
-
 const menuBtn = document.getElementById('menu-btn');
 const navList = document.querySelector('header nav ul');
 
@@ -53,11 +43,33 @@ menuBtn.addEventListener('click', () => {
   navList.classList.toggle('active');
 });
 
+// BOTÃO "COMEÇAR"
 document.getElementById("comecar").addEventListener("click", function(e) {
-    const isMobile = /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
 
+    // 1) bloquear mobile
+    const isMobile = /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
     if (isMobile) {
-        e.preventDefault(); // impede abrir a build
+        e.preventDefault();
         alert("Este jogo só pode ser jogado em computador. Use um PC para jogar.");
+        return;
     }
+
+    // 2) alerta para telas pequenas
+    if (window.innerWidth <= 1250) {
+        alert("Atenção: Para melhor experiência, mude para desktop!");
+        return;
+    }
+
+    // 3) abrir a unity dentro do iframe (sem trocar de página)
+    const iframe = document.getElementById("unity-iframe");
+    iframe.src = "./BuildInnovaLabTeste/index.html";
+    document.getElementById("unity-overlay").style.display = "flex";
+});
+
+document.getElementById("unity-close").addEventListener("click", function () {
+    const overlay = document.getElementById("unity-overlay");
+    const iframe = document.getElementById("unity-iframe");
+
+    overlay.style.display = "none";   // esconder overlay
+    iframe.src = "";                  // limpar Unity (senão continua rodando)
 });

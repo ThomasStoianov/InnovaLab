@@ -515,6 +515,11 @@ header nav ul li a:hover {
     border: none;
 }
 
+#treinamento .container-grid h2 span {
+    display: block;
+    text-align: center;
+}
+
 /*BOTÃO*/
 
 #comecar {
@@ -703,6 +708,48 @@ footer .container-grid {
     font-size: 18px;
     font-family: 'gabarito-regular';
 }
+
+#unity-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+#unity-blur-background {
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#unity-iframe {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#unity-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 99;
+    user-select: none;
+    transition: 0.2s;
+}
+
+#unity-close:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
 
 /* RESPONSIVIDADE */
 
