@@ -1105,6 +1105,10 @@ footer .container-grid {
         height: 200px;
     }
 
+    #valores-azul .valores {
+        flex-direction: column-reverse;
+    }
+
 }
 
 @media (max-width: 700px) {
