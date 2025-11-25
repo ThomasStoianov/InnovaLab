@@ -1041,7 +1041,7 @@ footer .container-grid {
     }
 
     .valores p {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -1079,15 +1079,41 @@ footer .container-grid {
         width: 300px;
     }
 
+    /* VALORES */
+
+    .valores {
+        flex-direction: column;
+
+        gap: 20px;
+        height: 600px;
+    }
+
+    .texto {
+        width: 90%;
+        text-align: center;
+    }
+
+    #anim-computador {
+        height: 100px;
+    }
+
+    #anim-homem-trabalhando {
+        height: 300px;
+    }
+
+    #anim-handshake {
+        height: 200px;
+    }
+
 }
 
 @media (max-width: 700px) {
     .valores p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .valores h2 {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     #footer-esquerda p {
@@ -1096,10 +1122,6 @@ footer .container-grid {
 
     header nav ul li a {
         font-size: 15px;
-    }
-
-    .valores {
-        height: 300px;
     }
 }
 
@@ -1112,27 +1134,11 @@ footer .container-grid {
         width: 80%;
     }
 
-    .valores h2 {
-        font-size: 18px;
-    }
-
     #footer-direita {
         width: 200px;
         gap: 23px;
     }
     
-    .card-text p {
-        font-size: 15px;
-    }
-
-    .valores h2 {
-        font-size: 15px;
-    }
-
-    .valores p {
-        font-size: 13px;
-    }
-
     .card {
         width: 70%;
     }
@@ -1191,11 +1197,11 @@ footer .container-grid {
     }
 
     .valores p {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .valores {
-        height: 250px;
+        height: 500px;
     }
 
     #nav-footer ul li a{
@@ -1234,15 +1240,19 @@ footer .container-grid {
         width: 75px;
         bottom: 10px;
     }
+
+    #banner-text h1 {
+        font-size: 40px;
+    }
+
+    .valores h2 {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 500px) {
     #banner-text h1 {
         font-size: 40px;
-    }
-
-    .valores {
-        height: 200px;
     }
 
     header nav ul{
@@ -1256,6 +1266,7 @@ footer .container-grid {
     .copy {
         display: none;
     }
+
 }
 
 @media (max-width: 450px) {
@@ -1272,7 +1283,7 @@ footer .container-grid {
     }
 
     .card-text p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     #cursos {
@@ -1303,10 +1314,6 @@ footer .container-grid {
     #banner-text h1 {
         font-size: 35px;
     }
-
-    .valores h2 {
-        font-size: 10px;
-    }
 }
 
 @media (max-width: 400px) {
@@ -1318,8 +1325,8 @@ footer .container-grid {
         gap: 10px;
     }
 
-    .valores p {
-        font-size: 8px;
+    #banner-text h1 {
+        font-size: 30px;
     }
 
     #treinamento .container-grid h2 {
@@ -1345,14 +1352,12 @@ footer .container-grid {
     #footer-direita p {
         font-size: 8px;
     }
+
+    .card p {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 350px) {
-    .valores p {
-        font-size: 6px;
-    }
-
-    .valores {
-        height: 150px;
-    }
+    
 }
