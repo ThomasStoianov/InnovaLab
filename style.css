@@ -502,7 +502,7 @@ header nav ul li a:hover {
     align-items: center;
     justify-content: center;
 
-    gap: 50px;
+    gap: 20px;
 }
 
 #treinamento .container-grid h2 {
@@ -976,6 +976,49 @@ footer .container-grid {
         width: 20px;
         height: 20px;
     }
+
+    footer {
+        height: 700px;
+    }
+
+    footer .container-grid {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #footer-esquerda {
+        align-items: center;
+        width: 90%;
+    }
+
+    #footer-esquerda img {
+        width: 250px;
+    }
+
+    #footer-esquerda p {
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #footer-direita {
+        align-self: center;
+
+        align-items: center;
+        width: 90%;
+    }
+
+    #footer-direita p {
+        font-size: 20px;
+    }
+
+    #nav-footer ul li {
+        text-align: center;
+    }
+
+    #nav-footer ul li a {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 950px) {
@@ -985,26 +1028,24 @@ footer .container-grid {
 }
 
 @media (max-width: 900px) {
-  /* Mostra o botão no celular */
+
   #menu-btn {
     display: block;
-    margin-left: auto; /* empurra o ícone pro canto direito */
+    margin-left: auto; 
   }
 
-  /* Ajusta o container do header */
   header .container-grid {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative; /* pra nav e botão ficarem dentro do header */
+    position: relative; 
   }
 
-  /* Esconde o menu por padrão */
   header nav ul {
     display: none;
     flex-direction: column;
     position: fixed;
-    top: 80px; /* logo abaixo do header */
+    top: 80px; 
     right: 10px;
     width: 25%;
     background: var(--azul-medio);
@@ -1015,12 +1056,10 @@ footer .container-grid {
     z-index: 1000;
   }
 
-  /* Quando ativo, aparece */
   header nav ul.active {
     display: flex;
   }
 
-  /* Links do menu */
   header nav ul li a {
     color: white;
     font-size: 1.1rem;
@@ -1047,8 +1086,7 @@ footer .container-grid {
 
 @media (max-width: 750px) {
     #footer-esquerda p {
-        width: 320px;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     #footer-esquerda img {
@@ -1061,6 +1099,10 @@ footer .container-grid {
 
     #projeto-educacional h4 {
         font-size: 15px;
+    }
+
+    #footer-direita p {
+        font-size: 18px;
     }
 
     #banner-text h1 {
@@ -1120,84 +1162,46 @@ footer .container-grid {
         font-size: 25px;
     }
 
-    #footer-esquerda p {
-        width: 280px;
-    }
-
     header nav ul li a {
         font-size: 15px;
     }
 }
 
 @media (max-width: 650px) {
-    #footer-esquerda p {
-        width: 80%;
-    }
 
     footer .container-grid {
         width: 80%;
-    }
-
-    #footer-direita {
-        width: 200px;
-        gap: 23px;
     }
     
     .card {
         width: 70%;
     }
+
+    #nav-footer ul li a {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 600px) {
+
     #treinamento .container-grid h2 {
         font-size: 40px;
     }
 
-    #footer-esquerda img {
-        width: 50%;
-    }
-
-    #footer-esquerda p {
-        font-size: 10px;
-    }
-
-    footer .container-grid {
-        width: 80%;
-    }
-
-    #nav-footer ul li a {
-        font-size: 15px;
-    }
-
-    footer {
-        height: 250px;
-    }
-
-    #projeto-educacional {
-        width: 150px;
-    }
-
     #projeto-educacional h4{
-        font-size: 10px;
-
         font-family: 'gabarito-regular';
     }   
 
-    #footer-direita p {
-        font-size: 10px;
-        white-space: nowrap;
-    }
-
    .anim-computador {
-        width: 50%;
+        width: 60%;
     }
 
     #anim-homem-trabalhando {
-        width: 50%;
+        width: 60%;
     }
 
     #anim-handshake {
-        width: 50%;
+        width: 60%;
     }
 
     .valores p {
@@ -1205,11 +1209,7 @@ footer .container-grid {
     }
 
     .valores {
-        height: 500px;
-    }
-
-    #nav-footer ul li a{
-        font-size: 15px;
+        height: 550px;
     }
 
     .card-text p {
@@ -1227,7 +1227,6 @@ footer .container-grid {
     .texto {
         gap: 20px;
     }
-
     
     #dots {
         width: 100px;
@@ -1287,7 +1286,7 @@ footer .container-grid {
     }
 
     .card-text p {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     #cursos {
@@ -1296,19 +1295,6 @@ footer .container-grid {
 
     .conheca-cursos h3 {
         font-size: 15px;
-    }
-
-    #nav-footer ul li a {
-        font-size: 12px;
-    }
-
-    #projeto-educacional img {
-        width: 15px;
-    }
-
-    #projeto-educacional {
-        width: 130px;
-        height: 30px;
     }
 
     #projeto-educacional p{
@@ -1337,10 +1323,6 @@ footer .container-grid {
         font-size: 30px;
     }
 
-    #footer-esquerda p{
-        font-size: 8px;
-    }
-
     .copy {
         vertical-align: middle;
     }
@@ -1353,15 +1335,25 @@ footer .container-grid {
         width: 280px;
     }
 
-    #footer-direita p {
-        font-size: 8px;
-    }
-
     .card p {
         font-size: 10px;
+    }
+
+    #direitos p {
+        width: 50%;
     }
 }
 
 @media (max-width: 350px) {
-    
+    #footer-esquerda p {
+        font-size: 15px;
+    }
+
+    #footer-direita p {
+        font-size: 15px;
+    }
+
+    #treinamento .container-grid h2 {
+        font-size: 25px;
+    }
 }
