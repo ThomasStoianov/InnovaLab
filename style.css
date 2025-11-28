@@ -160,6 +160,13 @@ header nav ul li a:hover {
     object-fit: cover;
 }
 
+.slide video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
 #dots {
     width: 150px;
     height: 40px;
@@ -966,7 +973,7 @@ footer .container-grid {
     }
 
     #dots {
-        width: 120px;
+        width: 100px;
         height: 20px;
 
         bottom: 20px;
@@ -1268,6 +1275,10 @@ footer .container-grid {
 
     .copy {
         display: none;
+    }
+
+    .anim-computador svg {
+        height: 50px;
     }
 
 }

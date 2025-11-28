@@ -73,3 +73,11 @@ document.getElementById("unity-close").addEventListener("click", function () {
     overlay.style.display = "none";   // esconder overlay
     iframe.src = "";                  // limpar Unity (senão continua rodando)
 });
+
+const video = document.querySelector('.slide video');
+
+    video.muted = true; // garantir que está mutado
+    video.play().catch(() => {
+        // Se falhar, tenta de novo após o carregamento
+        video.addEventListener('canplay', () => video.play());
+    });
