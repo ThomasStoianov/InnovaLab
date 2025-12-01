@@ -76,8 +76,8 @@ document.getElementById("unity-close").addEventListener("click", function () {
 
 const video = document.querySelector('.slide video');
 
-    video.muted = true; // garantir que está mutado
-    video.play().catch(() => {
+video.muted = true; // garantir que está mutado
+video.play().catch(() => {
         // Se falhar, tenta de novo após o carregamento
         video.addEventListener('canplay', () => video.play());
     });
