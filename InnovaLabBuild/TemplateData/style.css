@@ -23,6 +23,7 @@ body { padding: 0; margin: 0 }
 #unity-build-title {
     font-family: 'gabarito-bold';
     color: white;
+    font-size: 25px;
 }
 
 #unity-logo-title-footer {
