@@ -20,10 +20,10 @@ body { padding: 0; margin: 0 }
     src: url(../../Gabarito/static/Gabarito-Bold.ttf);
 }
 
-#unity-build-title {
-    font-family: 'gabarito-bold';
-    color: white;
+#unity-build-title  {
     font-size: 25px;
+    color: white;
+    font-family: 'gabarito-bold';
 }
 
 #unity-logo-title-footer {
