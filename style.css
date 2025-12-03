@@ -856,6 +856,12 @@ footer .container-grid {
     }
 }
 
+@media (max-width: 1250px) {
+    .card p {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 1200px) {
     .card {
         height: 300px;
