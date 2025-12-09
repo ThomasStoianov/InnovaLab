@@ -62,7 +62,7 @@ document.getElementById("comecar").addEventListener("click", function(e) {
 
     // 3) abrir a unity dentro do iframe (sem trocar de página)
     const iframe = document.getElementById("unity-iframe");
-    iframe.src = "./Build/index.html";
+    iframe.src = "./InnovaLabBuild/index.html";
     document.getElementById("unity-overlay").style.display = "flex";
 });
 
